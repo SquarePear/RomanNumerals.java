@@ -6,11 +6,14 @@ enum ROMAN_NUMERALS {
 
 public class RomanNumerals {
     public String convertNumberToNumeral(int number) {
-        String romanNumeral = "";
+        StringBuilder romanNumeral = new StringBuilder();
 
-        if (number == 1)
-            romanNumeral = "I";
+        while (number > 0) {
+            romanNumeral.append("I");
 
-        return romanNumeral;
+            number--;
+        }
+
+        return romanNumeral.toString();
     }
 }
