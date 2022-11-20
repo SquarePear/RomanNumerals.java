@@ -9,8 +9,13 @@ public class RomanNumerals {
         StringBuilder romanNumeral = new StringBuilder();
 
         while (number > 0) {
-            romanNumeral.append("I");
+            if (number - 4 >= 0) {
+                romanNumeral.append("IV");
+                number -= 4;
+                continue;
+            }
 
+            romanNumeral.append("I");
             number--;
         }
 

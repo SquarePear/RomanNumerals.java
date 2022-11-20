@@ -20,4 +20,10 @@ public class TestRomanNumerals {
         RomanNumerals romanNumerals = new RomanNumerals();
         Assertions.assertEquals("III", romanNumerals.convertNumberToNumeral(3));
     }
+
+    @Test
+    public void testConvertFour() {
+        RomanNumerals romanNumerals = new RomanNumerals();
+        Assertions.assertEquals("IV", romanNumerals.convertNumberToNumeral(4));
+    }
 }
