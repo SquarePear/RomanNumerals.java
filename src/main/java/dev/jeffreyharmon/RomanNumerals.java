@@ -8,6 +8,9 @@ public class RomanNumerals {
     public String convertNumberToNumeral(int number) {
         String romanNumeral = "";
 
+        if (number == 1)
+            romanNumeral = "I";
+
         return romanNumeral;
     }
 }

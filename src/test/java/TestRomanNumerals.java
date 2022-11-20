@@ -8,4 +8,10 @@ public class TestRomanNumerals {
         RomanNumerals romanNumerals = new RomanNumerals();
         Assertions.assertEquals("", romanNumerals.convertNumberToNumeral(0));
     }
+
+    @Test
+    public void testConvertOne() {
+        RomanNumerals romanNumerals = new RomanNumerals();
+        Assertions.assertEquals("I", romanNumerals.convertNumberToNumeral(1));
+    }
 }
