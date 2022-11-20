@@ -9,6 +9,7 @@ enum ROMAN_NUMERALS {
 
 public class RomanNumerals {
     private static final Map<ROMAN_NUMERALS, Integer> ROMAN_NUMERALS_TO_NUMBERS = new HashMap<>() {{
+        put(ROMAN_NUMERALS.C, 100);
         put(ROMAN_NUMERALS.XC, 90);
         put(ROMAN_NUMERALS.L, 50);
         put(ROMAN_NUMERALS.XL, 40);
