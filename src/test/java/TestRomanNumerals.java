@@ -68,4 +68,10 @@ public class TestRomanNumerals {
         RomanNumerals romanNumerals = new RomanNumerals();
         Assertions.assertEquals("C", romanNumerals.convertNumberToNumeral(100));
     }
+
+    @Test
+    public void testConvert400() {
+        RomanNumerals romanNumerals = new RomanNumerals();
+        Assertions.assertEquals("CD", romanNumerals.convertNumberToNumeral(400));
+    }
 }
