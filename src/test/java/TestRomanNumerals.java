@@ -92,4 +92,22 @@ public class TestRomanNumerals {
         RomanNumerals romanNumerals = new RomanNumerals();
         Assertions.assertEquals("M", romanNumerals.convertNumberToNumeral(1000));
     }
+
+    @Test
+    public void testConvert1999() {
+        RomanNumerals romanNumerals = new RomanNumerals();
+        Assertions.assertEquals("MCMXCIX", romanNumerals.convertNumberToNumeral(1999));
+    }
+
+    @Test
+    public void testConvert2022() {
+        RomanNumerals romanNumerals = new RomanNumerals();
+        Assertions.assertEquals("MMXXII", romanNumerals.convertNumberToNumeral(2022));
+    }
+
+    @Test
+    public void testConvert3999() {
+        RomanNumerals romanNumerals = new RomanNumerals();
+        Assertions.assertEquals("MMMCMXCIX", romanNumerals.convertNumberToNumeral(3999));
+    }
 }
