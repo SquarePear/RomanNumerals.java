@@ -9,10 +9,13 @@ public class RomanNumerals {
         StringBuilder romanNumeral = new StringBuilder();
 
         while (number > 0) {
-            if (number -5 >= 0) {
+            if (number - 9 >= 0) {
+                romanNumeral.append(ROMAN_NUMERALS.IX);
+                number -= 9;
+            } else if (number - 5 >= 0) {
                 romanNumeral.append(ROMAN_NUMERALS.V);
                 number -= 5;
-            } else if (number -4 >= 0) {
+            } else if (number - 4 >= 0) {
                 romanNumeral.append(ROMAN_NUMERALS.IV);
                 number -= 4;
             } else {

@@ -32,4 +32,10 @@ public class TestRomanNumerals {
         RomanNumerals romanNumerals = new RomanNumerals();
         Assertions.assertEquals("V", romanNumerals.convertNumberToNumeral(5));
     }
+
+    @Test
+    public void testConvertNine() {
+        RomanNumerals romanNumerals = new RomanNumerals();
+        Assertions.assertEquals("IX", romanNumerals.convertNumberToNumeral(9));
+    }
 }
