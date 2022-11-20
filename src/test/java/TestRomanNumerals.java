@@ -56,4 +56,10 @@ public class TestRomanNumerals {
         RomanNumerals romanNumerals = new RomanNumerals();
         Assertions.assertEquals("L", romanNumerals.convertNumberToNumeral(50));
     }
+
+    @Test
+    public void testConvert90() {
+        RomanNumerals romanNumerals = new RomanNumerals();
+        Assertions.assertEquals("XC", romanNumerals.convertNumberToNumeral(90));
+    }
 }
