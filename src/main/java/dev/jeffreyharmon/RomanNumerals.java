@@ -1,26 +1,35 @@
 package dev.jeffreyharmon;
 
+import java.util.HashMap;
+import java.util.Map;
+
 enum ROMAN_NUMERALS {
     M, CM, D, CD, C, XC, L, XL, X, IX, V, IV, I
 }
 
 public class RomanNumerals {
+    private static final Map<ROMAN_NUMERALS, Integer> ROMAN_NUMERALS_TO_NUMBERS = new HashMap<ROMAN_NUMERALS, Integer>() {{
+        put(ROMAN_NUMERALS.X, 10);
+        put(ROMAN_NUMERALS.IX, 9);
+        put(ROMAN_NUMERALS.V, 5);
+        put(ROMAN_NUMERALS.IV, 4);
+        put(ROMAN_NUMERALS.I, 1);
+    }};
+
     public String convertNumberToNumeral(int number) {
         StringBuilder romanNumeral = new StringBuilder();
 
         while (number > 0) {
-            if (number - 9 >= 0) {
-                romanNumeral.append(ROMAN_NUMERALS.IX);
-                number -= 9;
-            } else if (number - 5 >= 0) {
-                romanNumeral.append(ROMAN_NUMERALS.V);
-                number -= 5;
-            } else if (number - 4 >= 0) {
-                romanNumeral.append(ROMAN_NUMERALS.IV);
-                number -= 4;
-            } else {
-                romanNumeral.append(ROMAN_NUMERALS.I);
-                number -= 1;
+            for (ROMAN_NUMERALS romanNumeralEnum : ROMAN_NUMERALS.values()) {
+                if (!ROMAN_NUMERALS_TO_NUMBERS.containsKey(romanNumeralEnum))
+                    continue;
+
+                if (number >= ROMAN_NUMERALS_TO_NUMBERS.get(romanNumeralEnum)) {
+                    romanNumeral.append(romanNumeralEnum);
+                    number -= ROMAN_NUMERALS_TO_NUMBERS.get(romanNumeralEnum);
+
+                    break;
+                }
             }
         }
 
