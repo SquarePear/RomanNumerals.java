@@ -9,14 +9,16 @@ public class RomanNumerals {
         StringBuilder romanNumeral = new StringBuilder();
 
         while (number > 0) {
-            if (number - 4 >= 0) {
-                romanNumeral.append("IV");
+            if (number -5 >= 0) {
+                romanNumeral.append(ROMAN_NUMERALS.V);
+                number -= 5;
+            } else if (number -4 >= 0) {
+                romanNumeral.append(ROMAN_NUMERALS.IV);
                 number -= 4;
-                continue;
+            } else {
+                romanNumeral.append(ROMAN_NUMERALS.I);
+                number -= 1;
             }
-
-            romanNumeral.append("I");
-            number--;
         }
 
         return romanNumeral.toString();
