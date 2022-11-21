@@ -2,8 +2,20 @@ plugins {
     id 'java'
 }
 
-group 'dev.jeffreyharmon'
-version '1.0-SNAPSHOT'
+group 'dev.jeffreyharmon.cs222'
+version '0.1.0'
+
+jar {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+
+    manifest {
+        attributes 'Main-Class': 'dev.jeffreyharmon.cs222.Main'
+    }
+
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
 
 repositories {
     mavenCentral()

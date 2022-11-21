@@ -1,4 +1,4 @@
-package dev.jeffreyharmon;
+package dev.jeffreyharmon.cs222;
 
 import java.util.HashMap;
 import java.util.Map;

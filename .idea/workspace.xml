@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7738a858-a2c7-4b6d-9ce8-bbe9a1a993ce" name="Changes" comment="Implemented roman numeral D">
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/jeffreyharmon/RomanNumerals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/jeffreyharmon/RomanNumerals.java" afterDir="false" />
+    <list default="true" id="7738a858-a2c7-4b6d-9ce8-bbe9a1a993ce" name="Changes" comment="Added further tests">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/jeffreyharmon/cs222/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/jeffreyharmon/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/jeffreyharmon/RomanNumerals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/jeffreyharmon/cs222/RomanNumerals.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestRomanNumerals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestRomanNumerals.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +23,31 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="roman-numerals" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="roman-numerals" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -37,18 +68,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.TestRomanNumerals">
+  <component name="RunManager" selected="Gradle.roman-numerals [jar]">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dev.jeffreyharmon.Main" />
+      <option name="MAIN_CLASS_NAME" value="dev.jeffreyharmon.cs222.Main" />
       <module name="roman-numerals.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dev.jeffreyharmon.*" />
+          <option name="PATTERN" value="dev.jeffreyharmon.cs222.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -125,10 +161,32 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="roman-numerals [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.TestRomanNumerals" />
+        <item itemvalue="Gradle.roman-numerals [jar]" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Gradle.TestRomanNumerals" />
         <item itemvalue="Gradle.TestRomanNumerals.testAllConversions" />
         <item itemvalue="Gradle.TestRomanNumerals.testConvert" />
       </list>
@@ -234,7 +292,28 @@
       <option name="project" value="LOCAL" />
       <updated>1668973349630</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Implemented roman numeral CM">
+      <created>1668973396164</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1668973396164</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Implemented roman numeral M">
+      <created>1668973431550</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1668973431550</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Added further tests">
+      <created>1668973503270</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1668973503270</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -262,10 +341,13 @@
     <MESSAGE value="Implemented roman numeral C" />
     <MESSAGE value="Implemented roman numeral CD" />
     <MESSAGE value="Implemented roman numeral D" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented roman numeral D" />
+    <MESSAGE value="Implemented roman numeral CM" />
+    <MESSAGE value="Implemented roman numeral M" />
+    <MESSAGE value="Added further tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added further tests" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/roman_numerals$Main.ic" NAME="Main Coverage Results" MODIFIED="1668970236101" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/roman_numerals$Main.ic" NAME="Main Coverage Results" MODIFIED="1668973792066" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>dev.jeffreyharmon.*</FILTER>
     </SUITE>
   </component>
